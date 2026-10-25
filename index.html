@@ -1,72 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SciZone | Explore the Universe</title>
+  <title>WebMateMat | Ciência dos Materiais e Matemática</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Barra de Navegação -->
   <header>
     <nav class="navbar">
-      <div class="logo">🚀 SciZone</div>
+      <div class="logo">🧬 WebMateMat</div>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#topics">Topics</a></li>
-        <li><a href="#quiz">Daily Quiz</a></li>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#topicos">Conteúdos</a></li>
+        <li><a href="#desafio">Desafio Rápido</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <h1>Discover the Wonders of Science</h1>
-    <p>Cool experiments, space discoveries, and mind-blowing facts built for curious minds.</p>
-    <a href="#topics" class="btn">Start Exploring</a>
+  <!-- Seção Principal (Hero) -->
+  <section id="inicio" class="hero">
+    <h1>Desvende o Mundo dos Materiais e da Matemática</h1>
+    <p>Explore como os elementos do nosso planeta se transformam em tecnologia e como a matemática explica tudo ao nosso redor.</p>
+    <a href="#topicos" class="btn">Explorar Módulos</a>
   </section>
 
-  <!-- Science Topics Grid -->
-  <section id="topics" class="topics-section">
-    <h2>Explore Categories</h2>
+  <!-- Grade de Blocos de Conteúdo (Links para futuras páginas) -->
+  <section id="topicos" class="topics-section">
+    <h2>Módulos de Estudo</h2>
+    <p class="section-subtitle">Escolha um tópico abaixo para acessar o conteúdo completo:</p>
+
     <div class="card-grid">
-      <div class="card">
-        <span class="card-icon">🪐</span>
-        <h3>Space & Astronomy</h3>
-        <p>Black holes, distant galaxies, and human space exploration.</p>
-      </div>
-      <div class="card">
-        <span class="card-icon">⚡</span>
-        <h3>Physics & Energy</h3>
-        <p>Forces, light, quantum quirks, and how things work.</p>
-      </div>
-      <div class="card">
-        <span class="card-icon">🧬</span>
-        <h3>Biology & Genetics</h3>
-        <p>DNA, ecosystems, extremophiles, and the science of life.</p>
-      </div>
-      <div class="card">
-        <span class="card-icon">🧪</span>
-        <h3>Chemistry Lab</h3>
-        <p>Reactions, elements, and awesome home-friendly experiments.</p>
-      </div>
+      
+      <!-- Bloco 1 -->
+      <a href="estrutura-da-materia.html" class="card-link">
+        <div class="card">
+          <span class="card-icon">⚛️</span>
+          <h3>Estrutura da Matéria</h3>
+          <p>Átomos, ligações químicas e a organização interna dos materiais.</p>
+          <span class="card-btn">Acessar página &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Bloco 2 -->
+      <a href="propriedades-dos-materiais.html" class="card-link">
+        <div class="card">
+          <span class="card-icon">🛡️</span>
+          <h3>Propriedades dos Materiais</h3>
+          <p>Resistência, elasticidade, condutividade elétrica e térmica.</p>
+          <span class="card-btn">Acessar página &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Bloco 3 -->
+      <a href="funcoes-e-graficos.html" class="card-link">
+        <div class="card">
+          <span class="card-icon">📈</span>
+          <h3>Funções e Gráficos</h3>
+          <p>Como modelar comportamentos físicos e químicos no papel.</p>
+          <span class="card-btn">Acessar página &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Bloco 4 -->
+      <a href="geometria-espacial.html" class="card-link">
+        <div class="card">
+          <span class="card-icon">🧊</span>
+          <h3>Geometria dos Cristais</h3>
+          <p>Volumes, redes cristalinas e as formas geométricas dos minerais.</p>
+          <span class="card-btn">Acessar página &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Bloco 5 -->
+      <a href="polimeros-e-metais.html" class="card-link">
+        <div class="card">
+          <span class="card-icon">🧪</span>
+          <h3>Polímeros e Metais</h3>
+          <p>Plásticos, ligas metálicas e os materiais do futuro.</p>
+          <span class="card-btn">Acessar página &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Bloco 6 -->
+      <a href="estatistica-e-medicoes.html" class="card-link">
+        <div class="card">
+          <span class="card-icon">📊</span>
+          <h3>Estatística e Medições</h3>
+          <p>Tratamento de dados experimentais e margem de erro na ciência.</p>
+          <span class="card-btn">Acessar página &rarr;</span>
+        </div>
+      </a>
+
     </div>
   </section>
 
-  <!-- Interactive Quiz Section -->
-  <section id="quiz" class="quiz-section">
-    <h2>Quick Science Check</h2>
+  <!-- Seção de Quiz / Desafio Rápido -->
+  <section id="desafio" class="quiz-section">
+    <h2>Desafio do Dia</h2>
     <div class="quiz-box">
-      <p id="question">Loading question...</p>
+      <p id="question">Carregando pergunta...</p>
       <div class="options" id="options"></div>
       <p id="result"></p>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Rodapé -->
   <footer>
-    <p>&copy; 2026 SciZone School Project. Built with HTML, CSS & JavaScript.</p>
+    <p>&copy; WebMateMat — Projeto Escolar de Ciência dos Materiais e Matemática.</p>
   </footer>
 
   <script src="script.js"></script>
