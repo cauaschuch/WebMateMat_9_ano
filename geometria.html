@@ -51,7 +51,7 @@
   <!-- Cabeçalho do Artigo -->
   <section class="hero">
     <h1>📐 Geometria nos Materiais</h1>
-    <p>Por que os átomos do grafeno formam hexágonos? Por que pontes usam triângulos? A forma de uma estrutura define o quanto ela aguenta.</p>
+    <p>Dos átomos de um cristal às vigas de uma ponte: a geometria define como os materiais se organizam, como são analisados no laboratório e o quanto aguentam.</p>
   </section>
 
   <!-- Conteúdo Principal -->
@@ -101,7 +101,17 @@
 
       <h4 style="margin-top: 1rem; color: #38bdf8;">Simetria</h4>
       <p class="texto">Uma figura tem <strong>simetria de reflexão</strong> quando uma reta (eixo de simetria) a divide em duas metades que se encaixam como um espelho. Todo polígono regular de n lados tem <strong>n eixos de simetria</strong>: o hexágono tem 6, o quadrado tem 4, o triângulo equilátero tem 3. Também tem <strong>simetria de rotação</strong>: girando o ângulo central, a figura coincide consigo mesma.</p>
-      <p class="texto" style="margin-top: 0.5rem;"><strong>Na ciência dos materiais:</strong> a simetria dos cristais determina propriedades como dureza, brilho e a forma como quebram. O cristal de sal tem simetria cúbica; o do gelo, hexagonal, e por isso os flocos de neve têm seis pontas.</p>
+      <div style="width:100%; border-left: 4px solid #38bdf8; padding: 0.5rem 1rem; margin-top: 1rem; background: rgba(56,189,248,0.08); border-radius: 0 8px 8px 0; box-sizing: border-box;">
+        <p class="texto"><strong>🔬 Conexão com materiais — estrutura cristalina:</strong> os átomos de um sólido cristalino se organizam em padrões geométricos que se repetem. A simetria desse padrão influencia dureza, condutividade e a forma como o material quebra.</p>
+        <ul class="lista">
+          <li><strong>Grafeno e grafite:</strong> os átomos de carbono formam hexágonos regulares. A distância entre dois átomos vizinhos (o lado do hexágono) é de aproximadamente 0,142 nm, e o ângulo interno é de 120°.</li>
+          <li><strong>Sal de cozinha (NaCl):</strong> estrutura cúbica, com ângulos de 90° e 3 direções de simetria iguais. Por isso os cristais de sal são pequenos cubos.</li>
+          <li><strong>Gelo:</strong> estrutura hexagonal, e por isso os flocos de neve têm 6 pontas.</li>
+        </ul>
+        <div class="formula">
+          Perímetro de um hexágono do grafeno = 6 × 0,142 nm = 0,852 nm
+        </div>
+      </div>
 
       <h4 style="margin-top: 1.5rem; color: #38bdf8;">Algoritmo: construir um hexágono regular com régua e compasso</h4>
       <p class="texto">Dado o lado ℓ (por exemplo, ℓ = 4 cm), descrevemos o procedimento por escrito e em fluxograma:</p>
@@ -178,6 +188,15 @@
       </div>
 
       <p class="texto"><strong>Exemplo — treliça de ponte:</strong> as barras horizontais (banzos) de uma treliça são paralelas e uma barra diagonal é a transversal. Se a diagonal forma 50° com o banzo superior, ela forma 50° com o inferior (alternos internos) e 130° no ângulo colateral interno (180° − 50°). Engenheiros usam essas relações para calcular em que direção cada barra será tracionada ou comprimida.</p>
+
+      <div style="width:100%; border-left: 4px solid #38bdf8; padding: 0.5rem 1rem; margin-top: 1rem; background: rgba(56,189,248,0.08); border-radius: 0 8px 8px 0; box-sizing: border-box;">
+        <p class="texto"><strong>🔬 Conexão com materiais — planos atômicos e raios X:</strong> num cristal, os átomos formam camadas chamadas <strong>planos atômicos</strong>, que são paralelos entre si. Para descobrir de que material uma peça é feita, laboratórios usam a <strong>difração de raios X</strong>: o feixe incide sobre os planos e é refletido.</p>
+        <p class="texto" style="margin-top: 0.5rem;">O feixe incide formando um ângulo θ com os planos e sai formando o mesmo ângulo θ do outro lado. O desvio total do feixe, medido pelo detector, é 2θ.</p>
+        <div class="formula">
+          Se θ = 30°, o detector registra o sinal a 2θ = 60° da direção do feixe incidente.
+        </div>
+        <p class="texto">Cada material tem planos com espaçamentos diferentes, então produz picos em ângulos diferentes: é uma "impressão digital" geométrica do material.</p>
+      </div>
     </article>
 
     <!-- Bloco 3: Semelhança de triângulos -->
@@ -221,6 +240,15 @@
       </div>
 
       <p class="texto"><strong>Exemplo — por que o tamanho importa (k²):</strong> uma chapa de aço quadrada de 1 m de lado é ampliada para um quadrado de 2 m de lado (k = 2), com a mesma espessura. A área, e portanto a massa de aço, fica <strong>4 vezes</strong> maior (k² = 4), e não 2 vezes.</p>
+
+      <div style="width:100%; border-left: 4px solid #38bdf8; padding: 0.5rem 1rem; margin-top: 1rem; background: rgba(56,189,248,0.08); border-radius: 0 8px 8px 0; box-sizing: border-box;">
+        <p class="texto"><strong>🔬 Conexão com materiais — microscopia e modelos em escala:</strong> a imagem de um microscópio é semelhante ao objeto real, com razão k igual à <strong>ampliação</strong>. Com isso, medimos os <strong>grãos</strong> (os pequenos cristais que formam um metal), cujo tamanho afeta a resistência do material.</p>
+        <div class="formula">
+          Ampliação 500×, grão com 2 mm na imagem:<br>
+          tamanho real = 2 mm / 500 = 0,004 mm = 4 µm
+        </div>
+        <p class="texto">O mesmo vale para <strong>modelos em escala</strong>: uma viga de ponte de 20 m é testada em um modelo 1:50 de 0,4 m, e a partir da semelhança os engenheiros estimam o comportamento da estrutura real.</p>
+      </div>
     </article>
 
     <!-- Bloco 4: Relações métricas e Pitágoras -->
@@ -275,6 +303,8 @@
 
       <h4 style="color: #38bdf8;">Aplicações em estruturas e materiais</h4>
       <ul class="lista">
+        <li><strong>Raio atômico do cobre (célula cúbica de face centrada, CFC):</strong> na face do cubo, os átomos se tocam ao longo da diagonal, que mede 4 raios. Pelo Teorema de Pitágoras, a diagonal da face é a√2, em que a é a aresta do cubo. Para o cobre, a = 0,361 nm: diagonal = 0,361 × 1,414 ≈ 0,511 nm, então 4r = 0,511 e <strong>r ≈ 0,128 nm</strong>, que é o raio atômico do cobre.</li>
+        <li><strong>Ferro à temperatura ambiente (célula cúbica de corpo centrado, CCC):</strong> os átomos se tocam ao longo da diagonal do cubo, que mede a√3 (Pitágoras duas vezes). Para a = 0,287 nm, a diagonal é ≈ 0,497 nm e <strong>r ≈ 0,124 nm</strong>.</li>
         <li><strong>Cabo de aço de sustentação:</strong> um cabo está preso a 12 m de altura numa torre e a 5 m de distância da base. Comprimento do cabo: √(12² + 5²) = √169 = <strong>13 m</strong>.</li>
         <li><strong>Esquadro na obra:</strong> o triângulo 3-4-5 (ou 6-8-10) tem ângulo reto. Para conferir se dois perfis metálicos estão a 90°, marca-se 6 cm num e 8 cm no outro: a diagonal deve medir exatamente 10 cm.</li>
         <li><strong>Diagonal de uma chapa:</strong> uma chapa de 60 cm × 80 cm tem diagonal √(60² + 80²) = <strong>100 cm</strong>. Se a diagonal medir mais ou menos, a chapa não está em esquadro.</li>
@@ -321,6 +351,10 @@
       <p class="texto"><strong>Exemplo — vigas do telhado metálico:</strong> três vigas paralelas sustentam duas terças inclinadas. Na primeira terça, as vigas determinam trechos de 4 m e 6 m. Na segunda, o trecho de baixo mede 9 m. O trecho de cima mede x = 6 m, calculado pela proporção acima, sem precisar medir.</p>
 
       <p class="texto"><strong>Caso especial — dividir uma barra em partes proporcionais:</strong> para dividir um perfil de alumínio de 30 cm em 3 partes iguais sem calcular nada, traça-se uma semirreta auxiliar com 3 marcações iguais, liga-se a última marcação à ponta do perfil e traçam-se paralelas por cada marcação. O Teorema de Tales garante que as partes ficam iguais.</p>
+
+      <div style="width:100%; border-left: 4px solid #38bdf8; padding: 0.5rem 1rem; margin-top: 1rem; background: rgba(56,189,248,0.08); border-radius: 0 8px 8px 0; box-sizing: border-box;">
+        <p class="texto"><strong>🔬 Conexão com materiais — planos atômicos paralelos:</strong> os planos atômicos de um cristal são retas paralelas (vistos de lado) e igualmente espaçados. Qualquer direção que corte esses planos fica dividida em segmentos de mesmo tamanho. Se duas direções cortam 3 planos e na primeira os segmentos medem 0,4 nm e 0,4 nm, na segunda os dois segmentos também são iguais entre si, mesmo que sejam maiores (por exemplo, 0,6 nm e 0,6 nm).</p>
+      </div>
     </article>
 
     <!-- Bloco 6: Resumo -->
@@ -341,47 +375,72 @@
     <article id="exercicios" class="card" style="margin-bottom: 2rem; align-items: flex-start; text-align: left; border-color: #38bdf8;">
       <span class="card-icon">✏️</span>
       <h3>6. Hora de Praticar</h3>
+      <p class="texto" style="margin-bottom: 0.5rem;">Todos os exercícios usam situações reais de ciência dos materiais.</p>
 
-      <p class="texto"><strong>Exercício 1.</strong> Um polígono regular tem ângulo interno de 144°. Quantos lados ele tem e quantos eixos de simetria?</p>
+      <p class="texto"><strong>Exercício 1 — Grafeno.</strong> Cada anel do grafeno é um hexágono regular de lado 0,142 nm. Calcule o ângulo interno, o número de eixos de simetria e o perímetro do anel.</p>
       <details>
         <summary>Ver resposta</summary>
-        <p class="texto">(n − 2) · 180 / n = 144 → 180n − 360 = 144n → 36n = 360 → <strong>n = 10</strong> (decágono). Tem <strong>10 eixos de simetria</strong>.</p>
+        <p class="texto">Ângulo interno = (6 − 2) · 180° / 6 = <strong>120°</strong>. Eixos de simetria = <strong>6</strong>. Perímetro = 6 × 0,142 = <strong>0,852 nm</strong>.</p>
       </details>
 
-      <p class="texto" style="margin-top: 1.5rem;"><strong>Exercício 2.</strong> Duas barras paralelas de uma treliça são cortadas por uma diagonal. Um dos ângulos agudos mede 70°. Quanto mede o ângulo colateral interno a ele? E o alterno interno?</p>
+      <p class="texto" style="margin-top: 1.5rem;"><strong>Exercício 2 — Perfil metálico.</strong> A seção transversal de um perfil de aço é um polígono regular com ângulo interno de 135°. Qual é o polígono e quantos eixos de simetria ele tem?</p>
       <details>
         <summary>Ver resposta</summary>
-        <p class="texto">Colaterais internos somam 180°: 180° − 70° = <strong>110°</strong>. Alternos internos são iguais: <strong>70°</strong>.</p>
+        <p class="texto">(n − 2) · 180 / n = 135 → 180n − 360 = 135n → 45n = 360 → <strong>n = 8</strong> (octógono), com <strong>8 eixos de simetria</strong>.</p>
       </details>
 
-      <p class="texto" style="margin-top: 1.5rem;"><strong>Exercício 3.</strong> Os triângulos de lados 3, 4, 5 e 9, 12, 15 são semelhantes? Qual a razão de semelhança e a razão entre as áreas?</p>
+      <p class="texto" style="margin-top: 1.5rem;"><strong>Exercício 3 — Treliça.</strong> Em uma treliça de aço, duas barras paralelas são cortadas por uma diagonal que forma 70° com a barra superior. Quanto mede o ângulo alterno interno? E o colateral interno?</p>
       <details>
         <summary>Ver resposta</summary>
-        <p class="texto">Sim (caso LLL): 9/3 = 12/4 = 15/5 = 3, então <strong>k = 3</strong>. A razão entre as áreas é k² = <strong>9</strong>. (Conferindo: áreas 6 e 54; 54 / 6 = 9 ✔)</p>
+        <p class="texto">Alternos internos são iguais: <strong>70°</strong>. Colaterais internos somam 180°: 180° − 70° = <strong>110°</strong>.</p>
       </details>
 
-      <p class="texto" style="margin-top: 1.5rem;"><strong>Exercício 4.</strong> Um cabo de aço de 17 m prende o topo de um mastro ao chão, a 8 m da base do mastro. Qual a altura do mastro?</p>
+      <p class="texto" style="margin-top: 1.5rem;"><strong>Exercício 4 — Raios X.</strong> Em um ensaio de difração, o feixe incide formando 25° com os planos atômicos paralelos de um cristal. Qual o ângulo de saída em relação aos planos e qual o desvio total (2θ) registrado pelo detector?</p>
+      <details>
+        <summary>Ver resposta</summary>
+        <p class="texto">O ângulo de saída é igual ao de entrada: <strong>25°</strong>. O desvio total é 2 × 25° = <strong>50°</strong>.</p>
+      </details>
+
+      <p class="texto" style="margin-top: 1.5rem;"><strong>Exercício 5 — Microscopia.</strong> Em uma imagem de microscópio com ampliação de 200×, um grão de uma amostra de latão mede 3 mm. Qual o tamanho real do grão, em milímetros e em micrômetros (1 mm = 1000 µm)?</p>
+      <details>
+        <summary>Ver resposta</summary>
+        <p class="texto">Tamanho real = 3 / 200 = <strong>0,015 mm</strong> = <strong>15 µm</strong>.</p>
+      </details>
+
+      <p class="texto" style="margin-top: 1.5rem;"><strong>Exercício 6 — Modelo em escala.</strong> Um modelo de ponte na escala 1:50 tem uma viga de 0,4 m e uma chapa de reforço de 0,02 m². Quais são as medidas reais da viga e da área da chapa?</p>
+      <details>
+        <summary>Ver resposta</summary>
+        <p class="texto">Viga real = 0,4 × 50 = <strong>20 m</strong>. Para a área, usa-se k² = 50² = 2 500: 0,02 × 2 500 = <strong>50 m²</strong>.</p>
+      </details>
+
+      <p class="texto" style="margin-top: 1.5rem;"><strong>Exercício 7 — Estrutura cristalina do ferro.</strong> Na célula cúbica de corpo centrado do ferro, a aresta mede a = 0,287 nm e os átomos se tocam ao longo da diagonal do cubo, que mede 4 raios. A diagonal do cubo é a√3 (use √3 ≈ 1,73). Qual o raio do átomo de ferro?</p>
+      <details>
+        <summary>Ver resposta</summary>
+        <p class="texto">Diagonal = 0,287 × 1,73 ≈ 0,4965 nm. Como 4r = 0,4965, <strong>r ≈ 0,124 nm</strong>.</p>
+      </details>
+
+      <p class="texto" style="margin-top: 1.5rem;"><strong>Exercício 8 — Cabo de aço.</strong> Um cabo de aço de 17 m prende o topo de um mastro ao chão, a 8 m da base. Qual a altura do mastro?</p>
       <details>
         <summary>Ver resposta</summary>
         <p class="texto">h² + 8² = 17² → h² = 289 − 64 = 225 → <strong>h = 15 m</strong>.</p>
       </details>
 
-      <p class="texto" style="margin-top: 1.5rem;"><strong>Exercício 5.</strong> Em um triângulo retângulo, os catetos medem 9 e 12. Calcule a hipotenusa, a altura relativa a ela e as projeções m e n dos catetos.</p>
+      <p class="texto" style="margin-top: 1.5rem;"><strong>Exercício 9 — Chapa triangular.</strong> Uma chapa de aço tem forma de triângulo retângulo com catetos de 9 cm e 12 cm. Calcule a hipotenusa, a altura relativa a ela e as projeções m e n dos catetos.</p>
       <details>
         <summary>Ver resposta</summary>
-        <p class="texto">a = √(81 + 144) = <strong>15</strong>. h = (9 · 12) / 15 = <strong>7,2</strong>. m = 9² / 15 = <strong>5,4</strong> e n = 12² / 15 = <strong>9,6</strong>. Conferindo: 5,4 + 9,6 = 15 ✔.</p>
+        <p class="texto">a = √(81 + 144) = <strong>15 cm</strong>. h = (9 · 12) / 15 = <strong>7,2 cm</strong>. m = 9² / 15 = <strong>5,4 cm</strong> e n = 12² / 15 = <strong>9,6 cm</strong>. Conferindo: 5,4 + 9,6 = 15 ✔.</p>
       </details>
 
-      <p class="texto" style="margin-top: 1.5rem;"><strong>Exercício 6.</strong> Três vigas paralelas são cortadas por duas transversais. Na primeira, os segmentos medem 5 m e 10 m. Na segunda, o primeiro segmento mede 7 m. Quanto mede o outro?</p>
+      <p class="texto" style="margin-top: 1.5rem;"><strong>Exercício 10 — Vigas do telhado.</strong> Três vigas metálicas paralelas são cortadas por duas terças. Na primeira terça, os segmentos medem 5 m e 10 m. Na segunda, o primeiro segmento mede 7 m. Quanto mede o outro?</p>
       <details>
         <summary>Ver resposta</summary>
         <p class="texto">5 / 10 = 7 / x → 5x = 70 → <strong>x = 14 m</strong>.</p>
       </details>
 
-      <p class="texto" style="margin-top: 1.5rem;"><strong>Exercício 7 (desafio).</strong> Por que a colmeia e o grafeno usam hexágonos, e não pentágonos, para cobrir uma superfície plana sem deixar buracos?</p>
+      <p class="texto" style="margin-top: 1.5rem;"><strong>Desafio.</strong> Por que o grafeno é formado por hexágonos e não por pentágonos regulares, que deixariam lacunas ou sobreposições na camada de carbono?</p>
       <details>
         <summary>Ver resposta</summary>
-        <p class="texto">Para cobrir o plano sem lacunas, os ângulos em torno de cada vértice devem somar 360°. Com hexágonos (120°), três se encaixam: 3 × 120° = 360° ✔. Com pentágonos (108°), 3 × 108° = 324° deixam folga, e 4 × 108° = 432° passam de 360°. Por isso pentágonos regulares não ladrilham o plano.</p>
+        <p class="texto">Para cobrir o plano sem lacunas, os ângulos em torno de cada vértice devem somar 360°. Com hexágonos (120°), três se encaixam: 3 × 120° = 360° ✔. Com pentágonos (108°), 3 × 108° = 324° deixam folga, e 4 × 108° = 432° passam de 360°. Por isso uma camada plana de átomos em anéis regulares só é possível com hexágonos.</p>
       </details>
     </article>
 
