@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propriedades dos Materiais | WebMateMat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barra de Navegação -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">🧬 WebMateMat</div>
+      <ul class="nav-links">
+        <li><a href="index.html">← Voltar ao Início</a></li>
+        <li><a href="#mecanicas">Mecânicas</a></li>
+        <li><a href="#termicas">Térmicas</a></li>
+        <li><a href="#eletricas">Elétricas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Cabeçalho do Artigo -->
+  <section class="hero">
+    <h1>🛡️ Propriedades dos Materiais</h1>
+    <p>Por que o vidro quebra, o aço suporta pontes e o cobre conduz eletricidade? Entenda a física e a matemática por trás dos materiais.</p>
+  </section>
+
+  <!-- Conteúdo Principal -->
+  <main class="topics-section" style="text-align: left; max-width: 900px;">
+    
+    <!-- Bloco 1: Propriedades Mecânicas -->
+    <article id="mecanicas" class="card" style="margin-bottom: 2rem; align-items: flex-start; text-align: left;">
+      <span class="card-icon">🏗️</span>
+      <h3>1. Propriedades Mecânicas</h3>
+      <p style="margin-bottom: 1rem;">Determinam como um material reponde a forças externas (puxar, empurrar, torcer ou impactar).</p>
+      
+      <ul style="margin-left: 1.5rem; color: #cbd5e1; line-height: 1.8;">
+        <li><strong>Dureza:</strong> Resistência ao risco ou penetração. <em>Exemplo: O diamante é o material natural mais duro.</em></li>
+        <li><strong>Tenacidade:</strong> Capacidade de absorver energia e sofrer impacto sem quebrar. <em>Exemplo: O aço é muito tenaz.</em></li>
+        <li><strong>Elasticidade:</strong> Capacidade de esticar e voltar à forma original quando a força para.</li>
+        <li><strong>Plasticidade:</strong> Capacidade de se deformar permanentemente sem se romper.</li>
+      </ul>
+    </article>
+
+    <!-- Bloco 2: A Matemática do Estresse e Deformação -->
+    <article class="card" style="margin-bottom: 2rem; align-items: flex-start; text-align: left; border-color: #38bdf8;">
+      <span class="card-icon">📐</span>
+      <h3>2. A Matemática: Tensão ($\sigma$) e Deformação ($\epsilon$)</h3>
+      <p style="margin-bottom: 1rem;">Na engenharia de materiais, usamos a matemática para prever quando uma estrutura vai falhar:</p>
+
+      <div style="background: #0f172a; padding: 1rem; border-radius: 8px; font-family: 'Fira Code', monospace; width: 100%; color: #38bdf8; margin-bottom: 1rem;">
+        Fórmula da Tensão Mecânica:<br>
+        Tensão ($\sigma$) = Força ($F$) / Área ($A$)
+      </div>
+
+      <p style="color: #cbd5e1;">Quanto menor a área onde uma força é aplicada, maior será a pressão/tensão exercida sobre o material!</p>
+    </article>
+
+    <!-- Bloco 3: Propriedades Térmicas e Elétricas -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; width: 100%;">
+      
+      <article id="termicas" class="card" style="align-items: flex-start; text-align: left;">
+        <span class="card-icon">🔥</span>
+        <h3>3. Condutividade Térmica</h3>
+        <p>Capacidade de transferir calor. Metais são bons condutores térmicos, enquanto cerâmicas e plásticos funcionam como isolantes térmicos.</p>
+      </article>
+
+      <article id="eletricas" class="card" style="align-items: flex-start; text-align: left;">
+        <span class="card-icon">⚡</span>
+        <h3>4. Condutividade Elétrica</h3>
+        <p>Facilidade com que os elétrons se movem pelo material. É a base de todos os circuitos e chips de computador atuais.</p>
+      </article>
+
+    </div>
+
+    <!-- Botão de retorno ao final -->
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="index.html" class="btn">← Voltar para a Página Inicial</a>
+    </div>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; WebMateMat — Conteúdo de Ciência dos Materiais e Matemática.</p>
+  </footer>
+
+</body>
+</html>
