@@ -1,11 +1,11 @@
-// Sample Quiz Data
+// Pergunta interativa sobre Ciência dos Materiais / Matemática
 const quizData = {
-  question: "What is the speed of light in a vacuum?",
+  question: "Qual das seguintes propriedades mede a capacidade de um material resistir a ser riscado?",
   options: [
-    "300,000 km/s",
-    "150,000 km/s",
-    "1,000,000 km/s",
-    "30,000 km/s"
+    "Dureza",
+    "Tenacidade",
+    "Elasticidade",
+    "Dutilidade"
   ],
   correct: 0
 };
@@ -28,13 +28,12 @@ function loadQuiz() {
 function checkAnswer(selectedIndex) {
   const resultEl = document.getElementById('result');
   if (selectedIndex === quizData.correct) {
-    resultEl.textContent = "✅ Correct! Light travels at approximately 300,000 km per second.";
+    resultEl.textContent = "✅ Correto! A Dureza mede a resistência ao risco (como na escala de Mohs).";
     resultEl.style.color = "#4ade80";
   } else {
-    resultEl.textContent = "❌ Not quite! Give it another try.";
+    resultEl.textContent = "❌ Tente novamente!";
     resultEl.style.color = "#f87171";
   }
 }
 
-// Initialize quiz on page load
 document.addEventListener('DOMContentLoaded', loadQuiz);
